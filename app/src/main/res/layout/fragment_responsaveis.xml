@@ -19,7 +19,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Responsável">
+            android:hint="Nome do Responsável"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_responsavel"
                 android:layout_width="match_parent"
@@ -32,7 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Telefone">
+            android:hint="Telefone"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_telefone"
                 android:layout_width="match_parent"
@@ -46,7 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="E-mail">
+            android:hint="E-mail"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_email"
                 android:layout_width="match_parent"
@@ -60,29 +72,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Endereço">
+            android:hint="Endereço"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_endereco_responsavel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_salvar_responsavel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Salvar Responsável" />
+            android:text="Salvar Responsável"
+            app:cornerRadius="16dp" />
 
         <!-- Título da Lista -->
         <TextView
             android:id="@+id/text_view_titulo_lista_responsaveis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="Responsáveis Cadastrados"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="32dp" />
+            android:textStyle="bold" />
 
         <!-- Lista de Responsáveis -->
         <androidx.recyclerview.widget.RecyclerView

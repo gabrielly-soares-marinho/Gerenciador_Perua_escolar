@@ -19,7 +19,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome da Turma">
+            android:hint="Nome da Turma"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_turma"
                 android:layout_width="match_parent"
@@ -32,7 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Período (Manhã, Tarde, etc)">
+            android:hint="Período (Manhã, Tarde, etc)"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_periodo"
                 android:layout_width="match_parent"
@@ -45,19 +53,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Nome da Escola">
+            android:hint="Nome da Escola"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_escola_associada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_salvar_turma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Salvar Turma" />
+            android:text="Salvar Turma"
+            app:cornerRadius="16dp" />
 
         <!-- Título da Lista -->
         <TextView

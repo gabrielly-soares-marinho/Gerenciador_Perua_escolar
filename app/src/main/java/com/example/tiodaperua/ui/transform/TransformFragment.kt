@@ -22,7 +22,6 @@ class TransformFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         db = AppDatabase.getDatabase(requireContext())
-        // Infla o layout do dashboard que criamos
         return inflater.inflate(R.layout.fragment_transform, container, false)
     }
 
@@ -32,20 +31,16 @@ class TransformFragment : Fragment() {
         val alunosCountTextView = view.findViewById<TextView>(R.id.text_view_alunos_count)
         val condutoresCountTextView = view.findViewById<TextView>(R.id.text_view_condutores_count)
 
-        // Busca e observa a contagem de alunos
         viewLifecycleOwner.lifecycleScope.launch {
             db.alunoDao().getAllAlunos().collectLatest { alunos ->
-                // Garante que a atualização da UI seja na thread principal
                 requireActivity().runOnUiThread {
                     alunosCountTextView.text = alunos.size.toString()
                 }
             }
         }
 
-        // Busca e observa a contagem de condutores
         viewLifecycleOwner.lifecycleScope.launch {
             db.condutorDao().getAllCondutores().collectLatest { condutores ->
-                // Garante que a atualização da UI seja na thread principal
                 requireActivity().runOnUiThread {
                     condutoresCountTextView.text = condutores.size.toString()
                 }

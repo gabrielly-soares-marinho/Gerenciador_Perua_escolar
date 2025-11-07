@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.alunos.AlunosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Formulário de Cadastro -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_nome_aluno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Aluno">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_nome_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_escola"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Escola">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_escola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_turma"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Turma">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_turma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_endereco"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Endereço">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_salvar_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Salvar Aluno" />
+
+        <!-- Título da Lista -->
+        <TextView
+            android:id="@+id/text_view_titulo_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alunos Cadastrados"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <!-- Lista de Alunos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_alunos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_aluno" />
+
+    </LinearLayout>
+</ScrollView>

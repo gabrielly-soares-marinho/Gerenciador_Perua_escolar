@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_transform">
+
+    <fragment
+        android:id="@+id/nav_transform"
+        android:name="com.example.tiodaperua.ui.transform.TransformFragment"
+        android:label="@string/menu_transform"
+        tools:layout="@layout/fragment_transform" />
+
+    <fragment
+        android:id="@+id/nav_reflow"
+        android:name="com.example.tiodaperua.ui.reflow.ReflowFragment"
+        android:label="Cadastros"
+        tools:layout="@layout/fragment_reflow" >
+        <action
+            android:id="@+id/action_nav_reflow_to_alunosFragment"
+            app:destination="@id/alunosFragment" />
+        <action
+            android:id="@+id/action_nav_reflow_to_responsaveisFragment"
+            app:destination="@id/responsaveisFragment" />
+        <action
+            android:id="@+id/action_nav_reflow_to_turmaFragment"
+            app:destination="@id/turmaFragment" />
+        <action
+            android:id="@+id/action_nav_reflow_to_escolaFragment"
+            app:destination="@id/escolaFragment" />
+        <action
+            android:id="@+id/action_nav_reflow_to_condutoresFragment"
+            app:destination="@id/condutoresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.tiodaperua.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.tiodaperua.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/alunosFragment"
+        android:name="com.example.tiodaperua.ui.alunos.AlunosFragment"
+        android:label="Alunos"
+        tools:layout="@layout/fragment_alunos" />
+
+    <fragment
+        android:id="@+id/responsaveisFragment"
+        android:name="com.example.tiodaperua.ui.responsaveis.ResponsaveisFragment"
+        android:label="Responsáveis"
+        tools:layout="@layout/fragment_responsaveis" />
+
+    <fragment
+        android:id="@+id/turmaFragment"
+        android:name="com.example.tiodaperua.ui.turma.TurmaFragment"
+        android:label="Turma"
+        tools:layout="@layout/fragment_turma" />
+
+    <fragment
+        android:id="@+id/escolaFragment"
+        android:name="com.example.tiodaperua.ui.escola.EscolaFragment"
+        android:label="Escola"
+        tools:layout="@layout/fragment_escola" />
+
+    <fragment
+        android:id="@+id/condutoresFragment"
+        android:name="com.example.tiodaperua.ui.condutores.CondutoresFragment"
+        android:label="Condutores"
+        tools:layout="@layout/fragment_condutores" />
+
+</navigation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.turma.TurmaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Formulário de Cadastro -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_nome_turma"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Turma">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_nome_turma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_periodo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Período (Manhã, Tarde, etc)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_periodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_escola_associada"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nome da Escola">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_escola_associada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_salvar_turma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Salvar Turma" />
+
+        <!-- Título da Lista -->
+        <TextView
+            android:id="@+id/text_view_titulo_lista_turmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turmas Cadastradas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <!-- Lista de Turmas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_turmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_turma" />
+
+    </LinearLayout>
+</ScrollView>

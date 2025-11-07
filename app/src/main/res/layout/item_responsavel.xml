@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="8dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Ícone de Excluir -->
+        <ImageButton
+            android:id="@+id/button_delete_responsavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Excluir Responsável"
+            android:src="@android:drawable/ic_menu_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <!-- Ícone de Editar -->
+        <ImageButton
+            android:id="@+id/button_edit_responsavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Editar Responsável"
+            android:src="@android:drawable/ic_menu_edit"
+            app:layout_constraintEnd_toStartOf="@+id/button_delete_responsavel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/text_view_nome_responsavel_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_edit_responsavel"
+            tools:text="Nome do Responsável" />
+
+        <TextView
+            android:id="@+id/text_view_telefone_responsavel_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_nome_responsavel_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="(00) 00000-0000" />
+
+        <TextView
+            android:id="@+id/text_view_email_responsavel_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_telefone_responsavel_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="email@example.com" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

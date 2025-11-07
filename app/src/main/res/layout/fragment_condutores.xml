@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".ui.condutores.CondutoresFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_nome_condutor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Condutor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_nome_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_telefone_condutor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Telefone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_telefone_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_placa_veiculo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Placa do Veículo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_placa_veiculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_salvar_condutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Salvar Condutor" />
+
+        <!-- Título da Lista -->
+        <TextView
+            android:id="@+id/text_view_titulo_lista_condutores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condutores Cadastrados"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <!-- Lista de Condutores -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_condutores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_condutor" />
+
+    </LinearLayout>
+</ScrollView>

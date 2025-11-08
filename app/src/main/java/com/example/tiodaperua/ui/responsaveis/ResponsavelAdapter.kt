@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tiodaperua.data.Responsavel // Importa a classe Responsavel correta
+import com.example.tiodaperua.data.Responsavel
 import com.example.tiodaperua.databinding.ItemResponsavelBinding
 
 class ResponsavelAdapter(
@@ -28,6 +28,7 @@ class ResponsavelAdapter(
             binding.textViewNomeResponsavelItem.text = responsavel.nome
             binding.textViewTelefoneResponsavelItem.text = responsavel.telefone
             binding.textViewEmailResponsavelItem.text = responsavel.email
+            binding.textViewEnderecoResponsavelItem.text = responsavel.endereco
 
             binding.buttonEditResponsavel.setOnClickListener { onEditClicked(responsavel) }
             binding.buttonDeleteResponsavel.setOnClickListener { onDeleteClicked(responsavel) }

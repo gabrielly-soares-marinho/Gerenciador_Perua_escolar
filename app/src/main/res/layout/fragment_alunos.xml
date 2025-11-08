@@ -16,10 +16,14 @@
         <!-- Formulário de Cadastro -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_nome_aluno"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Aluno">
+            android:hint="Nome do Aluno"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_aluno"
@@ -29,11 +33,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_escola"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Escola">
+            android:hint="Escola"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_escola"
@@ -43,11 +51,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_turma"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Turma">
+            android:hint="Turma"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_turma"
@@ -57,11 +69,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_endereco"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Endereço">
+            android:hint="Endereço"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_endereco"
@@ -69,12 +85,14 @@
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_salvar_aluno"
+            style="@style/Widget.App.Cadastro.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Salvar Aluno" />
+            android:text="Salvar Aluno"
+            app:cornerRadius="16dp" />
 
         <!-- Título da Lista -->
         <TextView

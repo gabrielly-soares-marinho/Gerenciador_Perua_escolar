@@ -28,6 +28,7 @@ class AlunoAdapter(
             binding.textViewNomeAlunoItem.text = aluno.nome
             binding.textViewEscolaItem.text = aluno.escola
             binding.textViewTurmaItem.text = aluno.turma
+            binding.textViewEnderecoItem.text = aluno.endereco
 
             binding.buttonEditAluno.setOnClickListener { onEditClicked(aluno) }
             binding.buttonDeleteAluno.setOnClickListener { onDeleteClicked(aluno) }

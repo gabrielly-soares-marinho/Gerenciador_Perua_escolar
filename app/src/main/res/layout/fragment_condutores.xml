@@ -15,10 +15,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_nome_condutor"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Condutor">
+            android:hint="Nome do Condutor"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_condutor"
@@ -29,11 +33,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_telefone_condutor"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Telefone">
+            android:hint="Telefone"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_telefone_condutor"
@@ -45,11 +53,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_placa_veiculo"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Placa do Veículo">
+            android:hint="Placa do Veículo"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_placa_veiculo"
@@ -58,12 +70,14 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_salvar_condutor"
+            style="@style/Widget.App.Cadastro.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Salvar Condutor" />
+            android:text="Salvar Condutor"
+            app:cornerRadius="16dp" />
 
         <!-- Título da Lista -->
         <TextView

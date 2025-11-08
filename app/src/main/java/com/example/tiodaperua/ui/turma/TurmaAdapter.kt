@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tiodaperua.data.Turma // Importa a classe Turma correta
+import com.example.tiodaperua.data.Turma
 import com.example.tiodaperua.databinding.ItemTurmaBinding
 
 class TurmaAdapter(

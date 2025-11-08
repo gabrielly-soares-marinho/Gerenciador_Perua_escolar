@@ -22,4 +22,28 @@
     <style name="Theme.TioDaPerua.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TioDaPerua.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Estilos de componentes para as telas de cadastro e login -->
+    <style name="Cadastro.ShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.App.Cadastro.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearance">@style/Cadastro.ShapeAppearance</item>
+    </style>
+
+    <style name="Widget.App.Cadastro.Button" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/Cadastro.ShapeAppearance</item>
+    </style>
+
+    <style name="Widget.App.Cadastro.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/Cadastro.ShapeAppearance</item>
+    </style>
+
+    <style name="CircularImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
 </resources>

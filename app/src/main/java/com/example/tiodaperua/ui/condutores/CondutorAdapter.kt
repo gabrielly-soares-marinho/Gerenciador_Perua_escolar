@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tiodaperua.data.Condutor // Importa a classe Condutor correta
+import com.example.tiodaperua.data.Condutor
 import com.example.tiodaperua.databinding.ItemCondutorBinding
 
 class CondutorAdapter(

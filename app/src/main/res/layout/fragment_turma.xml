@@ -16,10 +16,11 @@
         <!-- Formulário de Cadastro -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_nome_turma"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome da Turma">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_turma"
                 android:layout_width="match_parent"
@@ -27,33 +28,36 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_layout_periodo"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/input_layout_escola_turma"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Período (Manhã, Tarde, etc)">
+            android:hint="Escola">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_escola_turma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_periodo"
+            style="@style/Widget.App.Cadastro.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Período">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_periodo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_layout_escola_associada"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Nome da Escola">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_edit_text_escola_associada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </com.google.android.material.textfield.TextInputLayout>
-
         <Button
             android:id="@+id/button_salvar_turma"
+            style="@style/Widget.App.Cadastro.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tiodaperua.data.Escola // Importa a classe Escola correta
+import com.example.tiodaperua.data.Escola
 import com.example.tiodaperua.databinding.ItemEscolaBinding
 
 class EscolaAdapter(

@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tiodaperua.data.Aluno // Importa a classe Aluno correta
+import com.example.tiodaperua.data.Aluno
 import com.example.tiodaperua.databinding.ItemAlunoBinding
 
 class AlunoAdapter(
@@ -28,7 +28,7 @@ class AlunoAdapter(
             binding.textViewNomeAlunoItem.text = aluno.nome
             binding.textViewEscolaItem.text = aluno.escola
             binding.textViewTurmaItem.text = aluno.turma
-            binding.textViewEnderecoItem.text = aluno.endereco
+            binding.textViewEnderecoItem.text = "${aluno.logradouro ?: ""}, ${aluno.numero ?: ""}"
 
             binding.buttonEditAluno.setOnClickListener { onEditClicked(aluno) }
             binding.buttonDeleteAluno.setOnClickListener { onDeleteClicked(aluno) }

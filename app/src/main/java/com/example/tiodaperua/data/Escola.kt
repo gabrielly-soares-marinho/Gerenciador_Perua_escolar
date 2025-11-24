@@ -8,6 +8,12 @@ data class Escola(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val nome: String,
-    val endereco: String,
+    val cep: String?,
+    val logradouro: String?,
+    val numero: String?,
+    val complemento: String?,
+    val bairro: String?,
+    val cidade: String?,
+    val estado: String?,
     val telefone: String
 )

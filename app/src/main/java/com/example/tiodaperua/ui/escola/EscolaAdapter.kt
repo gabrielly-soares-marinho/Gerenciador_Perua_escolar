@@ -26,7 +26,7 @@ class EscolaAdapter(
     class EscolaViewHolder(private val binding: ItemEscolaBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(escola: Escola, onEditClicked: (Escola) -> Unit, onDeleteClicked: (Escola) -> Unit) {
             binding.textViewNomeEscolaItem.text = escola.nome
-            binding.textViewEnderecoEscolaItem.text = escola.endereco
+            binding.textViewEnderecoEscolaItem.text = "${escola.logradouro ?: ""}, ${escola.numero ?: ""}"
             binding.textViewTelefoneEscolaItem.text = escola.telefone
 
             binding.buttonEditEscola.setOnClickListener { onEditClicked(escola) }

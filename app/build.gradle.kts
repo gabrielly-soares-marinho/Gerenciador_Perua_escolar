@@ -51,15 +51,11 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.fragment:fragment-ktx:1.6.2")
-    implementation(libs.navigation.fragment.ktx)
-    implementation(libs.navigation.ui.ktx)
-    implementation(libs.androidx.navigation.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    val room_version = libs.versions.room.get()
+    val room_version = "2.6.1"
 
     implementation("androidx.room:room-runtime:$room_version")
 
@@ -84,6 +80,9 @@ dependencies {
 
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$room_version")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
 
 }

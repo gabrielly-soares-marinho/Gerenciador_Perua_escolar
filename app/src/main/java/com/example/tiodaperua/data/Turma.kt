@@ -8,6 +8,13 @@ data class Turma(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val nome: String,
+    val escola: String,
     val periodo: String,
-    val escola: String
+    val cep: String?,
+    val logradouro: String?,
+    val numero: String?,
+    val complemento: String?,
+    val bairro: String?,
+    val cidade: String?,
+    val estado: String?
 )

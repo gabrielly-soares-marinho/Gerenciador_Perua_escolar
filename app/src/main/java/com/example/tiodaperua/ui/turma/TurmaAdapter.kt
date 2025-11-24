@@ -26,8 +26,8 @@ class TurmaAdapter(
     class TurmaViewHolder(private val binding: ItemTurmaBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(turma: Turma, onEditClicked: (Turma) -> Unit, onDeleteClicked: (Turma) -> Unit) {
             binding.textViewNomeTurmaItem.text = turma.nome
-            binding.textViewPeriodoItem.text = "Período: " + turma.periodo
             binding.textViewEscolaTurmaItem.text = turma.escola
+            binding.textViewEnderecoTurmaItem.text = "${turma.logradouro ?: ""}, ${turma.numero ?: ""}"
 
             binding.buttonEditTurma.setOnClickListener { onEditClicked(turma) }
             binding.buttonDeleteTurma.setOnClickListener { onDeleteClicked(turma) }

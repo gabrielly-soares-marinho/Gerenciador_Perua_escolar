@@ -9,11 +9,11 @@ O principal objetivo do projeto é oferecer uma ferramenta robusta e intuitiva, 
 ## 2. Telas Principais
 
 ### Fluxo de Autenticação e Navegação
-| Login | Criar Conta |
-| :---: | :---: |
+| Login |                               Criar Conta                               |
+| :---: |:-----------------------------------------------------------------------:|
 | ![Tela de Login](app/src/main/res/drawable/login.jpeg) | ![Tela de Criação de Conta](app/src/main/res/drawable/criar_conta.jpeg) |
-| **Menu Principal** | **Tela de Cadastros** |
-| ![Menu Principal](app/src/main/res/drawable/menu.jpeg) | ![Tela de Cadastros](app/src/main/res/drawable/cadastro.jpeg) |
+| **Menu Principal** |                          **Tela de Cadastros**                          |
+| ![Menu Principal](app/src/main/res/drawable/menu.jpeg) |     ![Tela de Cadastros](app/src/main/res/drawable/cadastros.jpeg)      |
 
 ### Fluxo de Gerenciamento de Alunos
 | Formulário de Aluno | Aluno Cadastrado |

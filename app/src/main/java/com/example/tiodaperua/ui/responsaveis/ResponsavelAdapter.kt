@@ -28,7 +28,7 @@ class ResponsavelAdapter(
             binding.textViewNomeResponsavelItem.text = responsavel.nome
             binding.textViewTelefoneResponsavelItem.text = responsavel.telefone
             binding.textViewEmailResponsavelItem.text = responsavel.email
-            binding.textViewEnderecoResponsavelItem.text = "${responsavel.logradouro ?: ""}, ${responsavel.numero ?: ""}"
+            binding.textViewEnderecoResponsavelItem.text = "${responsavel.logradouro}, ${responsavel.numero}"
 
             binding.buttonEditResponsavel.setOnClickListener { onEditClicked(responsavel) }
             binding.buttonDeleteResponsavel.setOnClickListener { onDeleteClicked(responsavel) }

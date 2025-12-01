@@ -150,7 +150,7 @@ class ResponsaveisFragment : Fragment() {
 
         lifecycleScope.launch {
             if (responsavelParaEditar == null) {
-                val novoResponsavel = Responsavel(0, nome, telefone, email, cep, logradouro, numero, complemento, bairro, cidade, estado)
+                val novoResponsavel = Responsavel(nome = nome, telefone = telefone, email = email, cep = cep, logradouro = logradouro, numero = numero, complemento = complemento, bairro = bairro, cidade = cidade, estado = estado)
                 db.responsavelDao().insert(novoResponsavel)
                 requireActivity().runOnUiThread {
                     Toast.makeText(context, "Responsável salvo com sucesso!", Toast.LENGTH_SHORT).show()

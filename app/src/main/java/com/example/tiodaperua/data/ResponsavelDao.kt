@@ -20,4 +20,10 @@ interface ResponsavelDao {
 
     @Query("SELECT * FROM responsaveis ORDER BY nome ASC")
     fun getAllResponsaveis(): Flow<List<Responsavel>>
+
+    @Query("SELECT * FROM responsaveis WHERE email = :email LIMIT 1")
+    suspend fun getResponsavelByEmail(email: String): Responsavel?
+
+    @Query("SELECT * FROM responsaveis WHERE id = :id LIMIT 1")
+    suspend fun getResponsavelById(id: Long): Responsavel?
 }

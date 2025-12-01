@@ -21,7 +21,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_name_register"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.App.Cadastro.TextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Nome"
@@ -40,7 +40,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_email_register"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.App.Cadastro.TextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -58,7 +58,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_password_register"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.App.Cadastro.TextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -75,8 +75,9 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_register_user"
+        style="@style/Widget.App.Cadastro.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

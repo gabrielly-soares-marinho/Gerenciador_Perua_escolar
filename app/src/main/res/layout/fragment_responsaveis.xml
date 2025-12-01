@@ -19,11 +19,8 @@
             style="@style/Widget.App.Cadastro.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do Responsável"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="Nome do Responsável">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_nome_responsavel"
                 android:layout_width="match_parent"
@@ -36,11 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Telefone"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="Telefone">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_telefone"
                 android:layout_width="match_parent"
@@ -54,11 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="E-mail"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="E-mail">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_email"
                 android:layout_width="match_parent"
@@ -72,11 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="CEP"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="CEP">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_cep"
@@ -91,11 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Logradouro"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="Logradouro">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_logradouro"
@@ -115,11 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Número"
-                app:boxCornerRadiusBottomEnd="16dp"
-                app:boxCornerRadiusBottomStart="16dp"
-                app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                android:hint="Número">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_edit_text_numero"
@@ -135,11 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:hint="Complemento"
-                app:boxCornerRadiusBottomEnd="16dp"
-                app:boxCornerRadiusBottomStart="16dp"
-                app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                android:hint="Complemento">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_edit_text_complemento"
@@ -155,11 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Bairro"
-            app:boxCornerRadiusBottomEnd="16dp"
-            app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
-            app:boxCornerRadiusTopStart="16dp">
+            android:hint="Bairro">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_bairro"
@@ -179,11 +150,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Cidade"
-                app:boxCornerRadiusBottomEnd="16dp"
-                app:boxCornerRadiusBottomStart="16dp"
-                app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                android:hint="Cidade">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_edit_text_cidade"
@@ -198,11 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:hint="Estado"
-                app:boxCornerRadiusBottomEnd="16dp"
-                app:boxCornerRadiusBottomStart="16dp"
-                app:boxCornerRadiusTopEnd="16dp"
-                app:boxCornerRadiusTopStart="16dp">
+                android:hint="Estado">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_edit_text_estado"
